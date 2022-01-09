@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width:100%;
+
+}
+
+
+.bck{
+    background-image: url(cover1.jpg);
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: left 5s;
+
+
+
+    animation-name:animation;
+    animation-direction:alternate-reverse;
+    animation-duration:10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+
+@keyframes animation{
+    0%{
+        background-image: url(cover1.jpg);
+        
+    }
+    50%{
+        background-image: url(cover2.jpg);
+
+    }
+    100%{
+        background-image: url(cover1.jpg);
+
+    }
+}
